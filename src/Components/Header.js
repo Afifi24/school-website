@@ -216,8 +216,8 @@ background-color: #fff;
   .nav-menu{
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: 8%;
+    height: 100vh;
+    top: 60%;
     left: -100%;
     background-color: #076FC6;
     flex-direction: column;

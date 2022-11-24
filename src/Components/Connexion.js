@@ -14,7 +14,7 @@ export default function Connexion() {
             <label htmlFor="">Password</label>
             <input type="text" />
         </div>
-        <h4 ><Link className='pass' to='/oublie'>mot de passe oublié ?</Link></h4>
+        <h4 className='pass'>mot de passe oublié ?</h4>
        <button>Connexion</button>
       </div>
     </Connexstyle>
@@ -69,11 +69,9 @@ justify-content: center;
    .pass{
     cursor: pointer;
     font-size:0.9rem;
-    color: #000;
-    opacity: 0.5;
-    text-decoration: none;
+    color: #555;
     &:hover{
-       opacity: 0.8;
+      color: #222;
     }
    }
 }
