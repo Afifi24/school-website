@@ -17,7 +17,7 @@ export default function Header() {
         <input placeholder='Recherche' type="search" name="search" id="search" /><i class="fa-solid fa-magnifying-glass"></i>
       </div>
          <div className="header-login">
-            <button className='connex'><i class="fa-solid fa-user"></i> Connexion</button>
+            <button className='connex'> <Link to='/connexion'><i class="fa-solid fa-user"></i> Connexion</Link></button>
             <button>Inscription</button>
          </div>
         </div>
@@ -44,7 +44,11 @@ export default function Header() {
 
 
 const Headerstyle = styled.div`
-min-height: 20vh;
+/* min-height: 20vh; */
+position: sticky;
+top: 0;
+left: 0;
+background-color: #fff;
 .header{
     width: 90%;
     margin: auto;
@@ -65,7 +69,7 @@ min-height: 20vh;
         border-bottom-left-radius:3px;
         border: 1px solid #555;
         &:focus{
-            border: 1.5px solid #222;
+            border: 1.5px solid #076FC6;
             box-shadow:1px 1px 10px rgba(0,0,0,0.1);
         }
     }
@@ -100,6 +104,14 @@ min-height: 20vh;
       .connex{
             background-color: transparent;
             color: #076FC6;
+            a{
+              text-decoration: none;
+            color: #076FC6;
+
+              &:hover{
+                color: #fff;
+              }
+            }
             &:hover{
                 background-color: #076FC6;
                 color: #fff;
@@ -205,7 +217,7 @@ min-height: 20vh;
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 7%;
+    top: 8%;
     left: -100%;
     background-color: #076FC6;
     flex-direction: column;
